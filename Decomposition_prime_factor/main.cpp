@@ -5,3 +5,23 @@
 //(1)如果这个质数恰等于（小于的时候，继续执行循环）n，则说明分解质因数的过程已经结束，另外 打印出即可。
 //(2)但n能被k整除，则应打印出k的值，并用n除以k的商,作为新的正整数n.重复执行第二步。
 //(3)如果n不能被k整除，则用k+1作为k的值,重复执行第一步。
+#include <stdio.h>
+int main() {
+    int n;
+    printf("Please input this number:\n");
+    scanf("%d",&n);
+    printf("%d=",n);
+
+    for (int i = 2; i <= n; i++) {
+        while (n % i == 0) {
+            printf("%d",i);
+            n /= i;
+            if (n != 1) {
+                printf("*");
+            }
+        }
+    }
+
+    printf("\n");
+    return 0;
+}
