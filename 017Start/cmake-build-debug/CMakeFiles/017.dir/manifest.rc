@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "E:/uic_structured/C_example/017Start/cmake-build-debug/CMakeFiles/017.dir/embed.manifest"
